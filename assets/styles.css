@@ -35,7 +35,7 @@ nav a:hover,nav a.active{border-bottom-color:var(--gold);color:var(--gold)}
 .btn-rust{background:var(--rust);color:var(--text);border-color:var(--rust)}
 .btn-rust:hover{border-color:var(--gold)}
 
-.hero{padding:62px 0 44px;background:linear-gradient(135deg,#181818,#232323)}
+.hero{padding:62px 0 44px;background:linear-gradient(rgba(20,20,20,.88),rgba(20,20,20,.9)),url("https://images.unsplash.com/photo-1625047509248-ec889cbff17f?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat}
 .hero-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:28px;align-items:start}
 .hero-copy{max-width:760px;padding-right:24px}
 .hero-copy .tag{font-size:18px;line-height:1.6;max-width:58ch}
@@ -59,9 +59,12 @@ nav a:hover,nav a.active{border-bottom-color:var(--gold);color:var(--gold)}
 .feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .feature{background:var(--bg);border:1px solid var(--line-2);padding:24px;box-shadow:var(--shadow);transition:transform .3s ease-out, background-color .3s ease-out}
 .feature:hover{transform:translate(-2px,-2px) scale(1.01);background:var(--bg-alt)}
-.feature .ico{width:44px;height:44px;color:var(--gold);margin-bottom:10px}
 .feature h3{font-family:'IBM Plex Sans Condensed',sans-serif;font-size:19px;margin-bottom:8px}
 .feature p{font-size:14px;margin:0}
+.feature-media{width:100%;height:132px;object-fit:cover;border:2px solid #141414;box-shadow:var(--shadow);margin:0 0 12px;filter:saturate(.9) sepia(.06)}
+.feature-section{position:relative;overflow:hidden}
+.feature-section:before{content:'';position:absolute;inset:0;background:linear-gradient(rgba(31,31,31,.92),rgba(31,31,31,.94)),url("https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat;z-index:0}
+.feature-section .container{position:relative;z-index:1}
 
 .process-line{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:12px}
 .step{position:relative;background:var(--bg-alt);padding:14px 12px;border-top:3px solid var(--gold);box-shadow:var(--shadow);cursor:pointer;min-height:178px}
