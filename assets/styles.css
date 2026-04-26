@@ -225,3 +225,24 @@ footer{background:#121212;color:#ddd4c5;padding:24px 0;border-top:4px solid var(
   .page-hero h1{font-size:42px}
   .feature-image img{height:220px}
 }
+/* --- content expansion components --- */
+.longform .panel{margin-bottom:10px}
+.timeline{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.timeline article{background:var(--panel);color:#1a1a1a;border:2px solid #2d2d2d;border-left:5px solid var(--accent-2);padding:12px;box-shadow:3px 3px 0 rgba(0,0,0,.2)}
+.issues-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.reviews-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.team-grid .panel p{margin:.35rem 0}
+.faq-list{display:grid;gap:8px}
+.faq-list details{background:var(--panel);color:#1a1a1a;border:2px solid #2d2d2d;padding:8px 10px}
+.faq-list summary{cursor:pointer;font-family:"IBM Plex Sans Condensed",sans-serif;font-weight:700;letter-spacing:.03em;text-transform:uppercase}
+.hours-table{width:100%;border-collapse:collapse}
+.hours-table td{border-bottom:1px solid #5e5342;padding:6px 0}
+.contact-form input,.contact-form select,.contact-form textarea{width:100%;padding:10px;border:2px solid #2a2a2a;background:#f6efe2;color:#131313;border-radius:0;font-family:"Work Sans",sans-serif}
+.contact-form textarea{min-height:110px}
+.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.contact-form label{display:block;font-family:"IBM Plex Sans Condensed",sans-serif;font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:#1f1f1f}
+@media (max-width:940px){
+  .timeline,.issues-grid,.reviews-grid,.values-grid,.reviews-list,.form-grid{grid-template-columns:1fr}
+}
