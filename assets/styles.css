@@ -1,0 +1,64 @@
+*{box-sizing:border-box}
+:root{
+  --red:#c62828;
+  --black:#111317;
+  --sand:#f4efe5;
+  --text:#17212b;
+  --muted:#5a6774;
+  --line:#ddd3c2;
+  --blue:#1f4e96;
+}
+body{margin:0;font-family:"Source Sans 3",system-ui,sans-serif;background:var(--sand);color:var(--text)}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.topbar{background:#0d1117;color:#d9e1ea;font-size:14px}
+.toprow{min-height:42px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:6px 0}
+.toprow strong{color:#fff}
+header{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid #e8dfd2}
+.nav{min-height:86px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo img{height:60px;width:auto;display:block}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{font-family:"Oswald",sans-serif;letter-spacing:.03em;font-size:18px;color:#22303d}
+.cta{background:var(--red);color:#fff;padding:12px 17px;border-radius:10px;font-weight:800}
+.hero{color:#fff;min-height:68vh;display:grid;align-items:center;background:linear-gradient(95deg,rgba(12,16,22,.9),rgba(12,16,22,.45)),url('https://lirp.cdn-website.com/d8d4667a/dms3rep/multi/opt/hero-rallyeautoservice-2304w.jpg') center/cover no-repeat}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;padding:62px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.35);padding:8px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#ffe3be}
+.dot{width:10px;height:10px;border-radius:999px;background:var(--red);box-shadow:13px 0 0 #fff,26px 0 0 var(--blue)}
+h1{font-family:"Oswald",sans-serif;font-size:clamp(44px,8vw,90px);line-height:.92;margin:14px 0 12px;text-transform:uppercase;letter-spacing:.8px}
+.sub{max-width:620px;color:#d8e2ec;font-size:20px;line-height:1.45}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.btn{padding:12px 16px;border-radius:10px;font-weight:800}
+.btn.red{background:var(--red);color:#fff}
+.btn.dark{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.4);color:#fff}
+.card{background:#fff;border:1px solid #e4dacb;border-radius:14px;padding:16px}
+.trust{background:rgba(244,239,229,.98);color:#111;border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 18px 36px rgba(0,0,0,.22)}
+.trust h3{margin:0 0 10px;font-family:"Oswald",sans-serif;font-size:30px;text-transform:uppercase;line-height:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:#fff;border:1px solid #e6dccd;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:800;color:#314150}
+.trust-visual{margin-top:12px;height:170px;border-radius:12px;border:1px solid #e2d8c9;position:relative;overflow:hidden;background:linear-gradient(115deg, rgba(10,14,20,.55), rgba(10,14,20,.2)),url('https://lirp.cdn-website.com/d8d4667a/dms3rep/multi/opt/brake-repair-rallyeautoservice-398h.png') center/cover no-repeat}
+.trust-visual-label{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.92);border:1px solid #e5dbcd;color:#1f2b36;padding:5px 8px;border-radius:999px;font-size:11px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+.texas-flag-badge{position:absolute;right:10px;bottom:10px;width:86px;height:52px;border-radius:8px;overflow:hidden;border:1px solid rgba(255,255,255,.65);box-shadow:0 6px 16px rgba(0,0,0,.35);background:linear-gradient(90deg,#1f4e96 0 34%,transparent 34%),linear-gradient(0deg,#b22234 0 50%,#fff 50% 100%)}
+.texas-flag-badge:before{content:"★";position:absolute;left:11px;top:50%;transform:translateY(-50%);color:#fff;font-size:18px}
+.section{padding:58px 0}
+h2{font-family:"Oswald",sans-serif;font-size:clamp(34px,5vw,56px);text-transform:uppercase;line-height:.95;margin:0 0 12px}
+.lead{max-width:780px;color:#3f4d5b;font-size:18px;line-height:1.6}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.price{font-family:"Oswald",sans-serif;color:var(--red);font-size:20px}
+.card h4{margin:6px 0;font-size:22px;font-family:"Oswald",sans-serif;line-height:1.05;text-transform:uppercase}
+.card p{margin:0;color:#4b5b69}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+.panel{border-radius:14px;padding:18px;border:1px solid #ded4c4;background:#fff}
+.panel.dark{background:linear-gradient(140deg,#151d26,#223546);color:#ebf1f7;border-color:#2f4558}
+.panel.dark p{color:#cfdbe5}
+.page-hero{background:#17212b;color:#fff;padding:48px 0;border-bottom:4px solid var(--red)}
+.page-hero h1{font-size:56px;margin:0}
+.list{display:grid;gap:12px}
+.item{background:#fff;border:1px solid #e3d8c9;border-radius:12px;padding:14px}
+footer{background:#111317;color:#d0d9e1;padding:26px 0;border-top:4px solid var(--red);margin-top:34px}
+.small{font-size:13px;color:#b7c4d0}
+@media (max-width:940px){
+  .hero-grid,.grid-3,.split{grid-template-columns:1fr}
+  nav{display:none}
+  .logo img{height:52px}
+  .page-hero h1{font-size:42px}
+}
