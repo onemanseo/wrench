@@ -50,6 +50,10 @@ h2{font-family:"Oswald",sans-serif;font-size:clamp(34px,5vw,56px);text-transform
 .panel{border-radius:14px;padding:18px;border:1px solid #ded4c4;background:#fff}
 .panel.dark{background:linear-gradient(140deg,#151d26,#223546);color:#ebf1f7;border-color:#2f4558}
 .panel.dark p{color:#cfdbe5}
+.testimonial .mini-testimonial{display:flex;align-items:center;gap:10px;margin-top:12px;padding-top:10px;border-top:1px solid #eadfce}
+.testimonial .mini-testimonial img{width:42px;height:42px;border-radius:999px;object-fit:cover;border:2px solid #fff;box-shadow:0 2px 10px rgba(0,0,0,.12)}
+.testimonial .mini-testimonial strong{display:block;font-size:14px;line-height:1.15}
+.testimonial .mini-testimonial span{display:block;font-size:12px;color:#5a6774}
 .page-hero{background:#17212b;color:#fff;padding:48px 0;border-bottom:4px solid var(--red)}
 .page-hero h1{font-size:56px;margin:0}
 .list{display:grid;gap:12px}
@@ -58,6 +62,12 @@ footer{background:#111317;color:#d0d9e1;padding:26px 0;border-top:4px solid var(
 .small{font-size:13px;color:#b7c4d0}
 @media (max-width:940px){
   .hero-grid,.grid-3,.split{grid-template-columns:1fr}
+  .hero-grid{padding:46px 0 34px}
+  .hero-copy{text-align:center}
+  .hero-copy .eyebrow{margin:0 auto 10px;justify-content:center}
+  .hero-copy h1{font-size:clamp(36px,12vw,52px);line-height:.95;margin:10px 0 12px}
+  .hero-copy .sub{margin:0 auto;max-width:34ch;font-size:18px;line-height:1.5;color:#e4edf5}
+  .hero-copy .btns{justify-content:center;margin-top:16px}
   nav{display:none}
   .logo img{height:52px}
   .page-hero h1{font-size:42px}
