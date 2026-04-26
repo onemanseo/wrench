@@ -23,7 +23,10 @@ nav a{font-family:"Oswald",sans-serif;letter-spacing:.03em;font-size:18px;color:
 .hero{color:#fff;min-height:68vh;display:grid;align-items:center;background:linear-gradient(95deg,rgba(12,16,22,.9),rgba(12,16,22,.45)),url('https://lirp.cdn-website.com/d8d4667a/dms3rep/multi/opt/hero-rallyeautoservice-2304w.jpg') center/cover no-repeat}
 .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:16px;padding:62px 0;align-items:start}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.35);padding:8px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#ffe3be}
-.dot{width:10px;height:10px;border-radius:999px;background:var(--red);box-shadow:13px 0 0 #fff,26px 0 0 var(--blue)}
+.dot{position:relative;display:inline-block;width:22px;height:10px}
+.dot::before,.dot::after{content:"";position:absolute;top:50%;width:10px;height:10px;border-radius:999px;transform:translateY(-50%)}
+.dot::before{left:0;background:var(--red)}
+.dot::after{left:12px;background:#fff;border:1px solid rgba(0,0,0,.18)}
 h1{font-family:"Oswald",sans-serif;font-size:clamp(44px,8vw,90px);line-height:.92;margin:14px 0 12px;text-transform:uppercase;letter-spacing:.8px}
 .sub{max-width:620px;color:#d8e2ec;font-size:20px;line-height:1.45}
 .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
