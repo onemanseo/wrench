@@ -66,11 +66,11 @@ nav a:hover,nav a.active{border-bottom-color:var(--gold);color:var(--gold)}
 .feature-section:before{content:'';position:absolute;inset:0;background:linear-gradient(rgba(31,31,31,.92),rgba(31,31,31,.94)),url("https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat;z-index:0}
 .feature-section .container{position:relative;z-index:1}
 
-.process-line{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:12px}
-.step{position:relative;background:var(--bg-alt);padding:14px 12px;border-top:3px solid var(--gold);box-shadow:var(--shadow);cursor:pointer;min-height:178px}
+.process-line{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x proximity}
+.step{position:relative;background:var(--bg-alt);padding:14px 12px;border-top:3px solid var(--gold);box-shadow:var(--shadow);cursor:pointer;min-width:220px;flex:0 0 220px;scroll-snap-align:start}
 .step .num{width:42px;height:42px;background:var(--gold);color:var(--bg);display:grid;place-items:center;font-family:'Merriweather',serif;font-weight:900;font-size:20px;margin-bottom:8px}
 .step h4{font-family:'IBM Plex Sans Condensed',sans-serif;font-size:15px;margin-bottom:8px}
-.step p{font-size:13px;margin:0;max-height:52px;overflow:hidden;transition:max-height .3s ease-out}
+.step p{font-size:13px;margin:0;max-height:none;overflow:visible;transition:max-height .3s ease-out}
 .step.active p{max-height:240px}
 
 .accordion{display:grid;gap:12px}
@@ -162,7 +162,6 @@ textarea{min-height:110px;resize:vertical}
 
 @media (max-width:1100px){
   .trust-grid,.feature-grid,.metrics-grid,.platform-grid,.value-grid,.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .process-line{grid-template-columns:repeat(4,minmax(0,1fr))}
   .tabs-layout{grid-template-columns:1fr}
   .tabs-nav{position:static;grid-template-columns:repeat(3,minmax(0,1fr))}
   .reviews-grid{columns:2}
@@ -173,7 +172,6 @@ textarea{min-height:110px;resize:vertical}
   .hero-copy{padding-right:0}
   .cta-row{flex-direction:column;align-items:stretch}
   .trust-grid,.feature-grid,.metrics-grid,.platform-grid,.value-grid,.team-grid,.cert-grid,.policy-grid,.steps-grid{grid-template-columns:1fr}
-  .process-line{grid-template-columns:1fr 1fr}
   .carousel-track{grid-template-columns:1fr}
   .reviews-grid{columns:1}
   nav{display:none}
